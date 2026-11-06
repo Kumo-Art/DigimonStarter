@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digimon</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>Digimon</h1>
+
+      <div class="controls">
+        <form id="search-form" class="search">
+          <input id="search-input" type="text" placeholder="Try agumon" />
+          <button>Search</button>
+        </form>
+
+        <select id="level-select">
+          <option value="Fresh">Fresh</option>
+          <option value="In Training">In Training</option>
+          <option value="Rookie" selected>Rookie</option>
+          <option value="Champion">Champion</option>
+          <option value="Ultimate">Ultimate</option>
+          <option value="Mega">Mega</option>
+        </select>
+      </div>
+
+      <p id="status" class="status"></p>
+    </header>
+
+    <!-- JavaScript fills this with Digimon cards -->
+    <main id="results" class="grid"></main>
+
+    <!-- type="module" lets script.js use import -->
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
